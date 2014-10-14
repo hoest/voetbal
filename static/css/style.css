@@ -1,0 +1,22 @@
+table th {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background: #eee;
+}
+
+th.datum,
+td.datum {
+  width: 100px;
+}
+
+th.wedstrijd,
+td.wedstrijd {
+  width: 350px;
+}
+
+th.uitslag,
+td.uitslag {
+  width: 100px;
+}

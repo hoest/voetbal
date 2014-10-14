@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Voetbal.nl - JSON feeds</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-188573-8', 'gnojed.nl');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <h1>Voetbal.nl - JSON feeds</h1>
+    <p>Lange tijd heb ik, <a href="mailto:jelle@hoest.nl">Jelle</a>, er op gewacht, dat de site <a href="http://www.voetbal.nl/">voetbal.nl</a> een API beschikbaar zou stellen om uitslagen en programma's van een club in te kunnen zien. Helaas is dit er nooit van gekomen en heb ik zelf maar de stoute schoenen aangetrokken. Bij deze een simpele REST API om op basis van je club-id van de KNVB, het programma en de uitslagen op te halen.</p>
+    <p>Hieronder zie je een voorbeeld voor <a href="http://www.vvz49.nl/">s.v. VVZ '49</a> uit Soest:</p>
+    <p>http://voetbal.gnojed.nl/<a href="/BBCC89Q/all"><strong>BBCC89Q</strong>/all</a><br/>
+    http://voetbal.gnojed.nl/<a href="/BBCC89Q/programma"><strong>BBCC89Q</strong>/programma</a><br/>
+    http://voetbal.gnojed.nl/<a href="/BBCC89Q/uitslagen"><strong>BBCC89Q</strong>/uitslagen</a></p>
+    <p id="wait">Programma en uitslagen worden opgehaald...</p>
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="{{ url_for('static', filename='js/voetbal.js') }}"></script>
+  </body>
+</html>
