@@ -5,7 +5,9 @@ Lange tijd heb ik, Jelle, er op gewacht, dat de site [voetbal.nl](http://www.voe
 Hieronder zie je een voorbeeld voor s.v. VVZ '49 uit Soest:
 
 http://voetbal.gnojed.nl/BBCC89Q/all
+
 http://voetbal.gnojed.nl/BBCC89Q/programma
+
 http://voetbal.gnojed.nl/BBCC89Q/uitslagen
 
 Update: inmiddels heeft de KNVB een [API](http://www.knvbdataservice.nl/) waarvoor je moet betalen.
